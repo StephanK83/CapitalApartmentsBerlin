@@ -92,3 +92,8 @@ html, body {
   pointer-events: auto;
   transform: rotateY(0deg);
 }
+
+.image_container_0.clicked .menue {
+  pointer-events: initial;
+  opacity: 1;
+}
