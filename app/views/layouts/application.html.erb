@@ -13,6 +13,7 @@
   <body>
     <% unless current_page?(root_path) %>
       <%= render 'shared/header' %>
+      <%= render 'shared/footer' %>
     <% end %>
     <%= yield %>
   </body>

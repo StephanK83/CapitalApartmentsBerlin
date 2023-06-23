@@ -7,12 +7,16 @@
       <ul class="menu__box">
         <li><%= link_to 'home', root_path, class: 'menu__item' %></li>
         <li><%= link_to 'about us', about_path, class: 'menu__item' %></li>
+        <li><%= link_to 'references & gallery', about_path, class: 'menu__item' %></li>
+        <li><%= link_to 'contact', about_path, class: 'menu__item' %></li>
+        <li><%= link_to 'login', about_path, class: 'menu__item' %></li>
+
       </ul>
   </div>
 
   <div class="container-language">
-    <%= link_to "DE", url_for(locale: :de), class: 'language_link', style: 'color: whitesmoke;' %>
-    <%= link_to "EN", url_for(locale: :en), class: 'language_link', style: 'color: whitesmoke;' %>
-    <%= link_to "FR", url_for(locale: :fr), class: 'language_link', style: 'color: whitesmoke;' %>
+    <%= link_to "DE", url_for(locale: :de), class: 'language_link', style: 'color: whitesmoke; font-family: "Poppins Black";' %>
+    <%= link_to "EN", url_for(locale: :en), class: 'language_link', style: 'color: whitesmoke; font-family: "Poppins Black";' %>
+    <%= link_to "FR", url_for(locale: :fr), class: 'language_link', style: 'color: whitesmoke; font-family: "Poppins Black";' %>
   </div>
 </div>
