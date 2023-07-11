@@ -4,24 +4,49 @@
       <%= image_tag("logo-black-trans.jpg", id: "logo", class: "container_photo") %>
       <div class="menue">
         <ol style="list-style-type: none; padding: 0; font-family: poppins black; letter-spacing: 1px; font-weight: normal; text-rendering: optimizeLegibility;">
+          <li><%= link_to 'home', root_path %></li>
           <li><%= link_to 'about us', about_path %></li>
-          <li><a href="#">references&gallery</a></li>
-          <li><a href="#">contact</a></li>
+          <li><a id="gallery_link" href="#">references&gallery</a></li>
+          <li><a id="contact_link" href="#">contact</a></li>
           <li><a href="#">login</a></li>
         </ol>
       </div>
-
+    </div>
+    <div class="image_container_4" style="display: none;">
+      <%= image_tag("horses2", class: "container_photo") %>
     </div>
     <div class="image_container_1">
       <%= image_tag("drehsessel", class: "container_photo") %>
+      <div class="contact_overlay" style="display: none;">
+        <ol style="list-style-type: none; text-align: left; padding: 0; font-family: poppins black; letter-spacing: 1px; font-weight: normal; text-rendering: optimizeLegibility;">
+          <li>Capital Apartments Berlin</li>
+          <li>Stephan Knorn</li>
+          <li>cab@berlin101.de</li>
+          <li>+49(0)1717570277</li>
+        </ol>
+      </div>
     </div>
   </div>
   <div class="second_row">
     <div class="image_container_2">
       <%= image_tag("fassade", class: "container_photo") %>
     </div>
+    <div class="image_container_5" style="display: none;">
+      <%= image_tag("20230707_212714.jpg", class: "container_photo") %>
+    </div>
     <div class="image_container_3">
       <%= image_tag("treppenhaus", class: "container_photo") %>
     </div>
+  </div>
+  <div class="third_row" style="display: none;">
+    <!--<div class="image_container_6">
+      <%= image_tag("IMG-20230706-WA0009.jpeg", class: "container_photo") %>
+    </div>-->
+    <div class="image_container_7">
+      <%= image_tag("om.webp", class: "container_photo") %>
+    </div>
+    <!--<div class="image_container_8">
+      <h1>Title</h1>
+    </div>-->
   </div>
 </div>

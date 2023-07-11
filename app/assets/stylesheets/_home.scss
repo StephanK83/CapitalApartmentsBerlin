@@ -16,7 +16,7 @@ html, body {
   margin: 10px;
 }
 
-.first_row, .second_row {
+.first_row, .second_row, .third_row {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -27,15 +27,19 @@ html, body {
   border-radius: 20px;
 }
 
+.horizontal {
+  display: flex;
+}
+
 .container_photo {
   max-width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: scale-down;
   border-radius: 20px;
 }
 
-.image_container_0, .image_container_1, .image_container_2, .image_container_3 {
-  max-width: 45%;
+div[class*="image_container_"] {
+  max-width: calc(33% - 10px); /* account for 5px margins on both sides */
   height: 100%;
   margin: 5px;
   margin-top: 10px;
@@ -43,6 +47,7 @@ html, body {
   position: relative;
   perspective: 1000px;
 }
+
 
 .menue {
   display: flex;
@@ -79,6 +84,19 @@ html, body {
   padding: 5px;
 }
 
+.contact_overlay ol li {
+  padding: 5px;
+  margin: 5px;
+}
+
+.contact_overlay ol {
+  font-family: poppins black;
+  letter-spacing: 1px;
+  font-weight: normal;
+  text-align: left;
+}
+
+
 .menue li:hover {
   background-color: rgba(255, 255, 255, 0.1);
 }
@@ -96,4 +114,22 @@ html, body {
 .image_container_0.clicked .menue {
   pointer-events: initial;
   opacity: 1;
+}
+
+.contact_overlay {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); // change as needed
+  color: white; // change as needed
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: all;
+  font-size: 20px; // change as needed
+  text-align: center;
+  border-radius: 20px;
 }
